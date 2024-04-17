@@ -41,7 +41,7 @@ Notebook Menu
         if not notes:
             notes = self.notebook.notes
         for note in notes:
-            print(f'{note.id}: {note.memo}\n{note.tags}')
+            print(f'{note.id}: {note.memo} (Tags: {note.tags}) (Date created: {note.creation_date})')
 
     def search_notes(self):
         filter_text = input('Search for: ')
